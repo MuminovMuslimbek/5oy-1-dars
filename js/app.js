@@ -206,4 +206,4 @@ let num6Every = [5, 12, 7, 18, 3, 20, 8, 15];
 let res6Every = num6Every.every(function(num) {
     return num < 100;
 });
-console.log(allLessThan100);
+console.log(res6Every);
