@@ -149,3 +149,61 @@ let result3Find = num3Find.filter(function(res3Find) {
 });
 console.log(result3Find);
 // Bu yerda filterlab bering degani uchun filter bilan ishlatdim
+
+// N4:
+let num4Find = [5, 12, 7, 18, 3, 20, 8, 15];
+let result4Find = num4Find.filter(function(res4Find) {
+    return res4Find % 2 === 0;
+});
+console.log(result4Find);
+
+// N5:
+let num5Find = [-5, -12, 0, 7, -18, 3, 20, -8, 15];
+let result5Find = num5Find.filter(function(res5Find) {
+    return res5Find >= 0;
+});
+console.log(result5Find);
+
+//some/every
+// N1:
+// somega
+let num1Some = [5, 12, -7, 18, 3, 20, 8, 15];
+let res1Some = num1Some.some(function(num) {
+    return num < 0;
+});
+console.log(res1Some);
+// N2:
+let num2Some = [5, 12, 7, 18, 3, 20, 8, 15];
+let res2Some = num2Some.some(function(num) {
+    return num % 2 === 0;
+});
+console.log(res2Some);
+
+// N3:
+let num3Some = ["banana", "kiwi", "apple", "grapefruit", "orange"];
+let res3Some = num3Some.some(function(fruit) {
+    return fruit === "apple";
+});
+console.log(res3Some);
+
+// ### `every` metodiga oid masalalar:
+// N4:
+let num4Every = [5, 12, 7, 18, 3, 20, 8, 15];
+let res4Every = num4Every.every(function(num) {
+    return num > 0;
+});
+console.log(res4Every);
+
+// N5:
+let num5Every = ["apple", "banana", "kiwi", "grapefruit"];
+let res5Every = num5Every.every(function(item) {
+    return typeof item === 'string';
+});
+console.log(res5Every);
+
+// N6:
+let num6Every = [5, 12, 7, 18, 3, 20, 8, 15];
+let res6Every = num6Every.every(function(num) {
+    return num < 100;
+});
+console.log(allLessThan100);
